@@ -113,7 +113,7 @@ class JobDAG(object):
         frontier_nodes_changed = False
         for child in node.child_nodes:
             if child.is_schedulable():
-                if child.idx not in self.frontier_nodes:
+                if child not in self.frontier_nodes:
                     self.frontier_nodes.add(child)
                     frontier_nodes_changed = True
         return frontier_nodes_changed
