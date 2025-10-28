@@ -1,0 +1,14 @@
+# Virtual environments
+venv/
+decima-venv/
+*/__pycache__/
+*.pyc
+
+# TensorFlow checkpoints, logs, etc.
+*.ckpt
+*.log
+*.pkl
+*.h5
+*.npy
+*.npz
+
